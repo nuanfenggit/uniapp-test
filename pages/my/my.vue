@@ -1,7 +1,9 @@
 <template>
 	<view class="container">
-		
-		首页
+		<view class="">
+			<button type="primary" size="mini" @click="goto('/pages/login/login')">注册/登录</button>
+		</view>
+			
 	</view>
 </template>
 
@@ -13,7 +15,11 @@
 			}
 		},
 		methods: {
-
+			goto(url){
+				uni.navigateTo({
+					url: url
+				})
+			}
 		}
 	}
 </script>
