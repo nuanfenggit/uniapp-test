@@ -4,6 +4,7 @@
 		我是登录页面
 		<text>login</text>
 		<text>login2</text>
+		登录注册测试
 	</view>
 </template>
 
