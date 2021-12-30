@@ -7,6 +7,7 @@
 		登录注册测试1
 		<view class="">
 			<text>nihao</text>
+			<text>nihao2</text>
 		</view>			
 	</view>
 </template>
