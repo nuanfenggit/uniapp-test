@@ -2,6 +2,7 @@
 	<view class="container">
 		
 		首页
+		index
 	</view>
 </template>
 
@@ -11,6 +12,10 @@
 			return {
 				href: 'https://uniapp.dcloud.io/component/README?id=uniui'
 			}
+		},
+			
+		created(){
+			
 		},
 		methods: {
 
