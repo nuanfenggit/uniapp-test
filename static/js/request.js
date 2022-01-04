@@ -1,5 +1,4 @@
 const request = async function(url, method, data, header) {
-	console.log("request")
 	return new Promise((resolve, reject) => {
 		data['key'] = '457760ae499840c78fa1f7f935d6cfc6';
 		// 发送请求
