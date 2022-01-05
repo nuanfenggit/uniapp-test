@@ -26,6 +26,12 @@
 			}
 		},
 		{
+			"path": "pages/listDetail/listDetail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
 			"path": "pages/list/list",
 			"style": {
 				"navigationBarTitleText": "列表"

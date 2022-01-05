@@ -2,7 +2,7 @@
 	<view class="container">
 		<scroll-view scroll-y="true" >
 			<view class="box">
-				<view class="boxItem" v-for="(item,index) in dataArr" :key="index" @click="toPage()">
+				<view class="boxItem" v-for="(item,index) in dataArr" :key="index" @click="toPage(index)">
 					<view class="imgBox" :class="(index+1) % 2 === 0 ? 'bg1': 'bg2'">
 						<image src="../../static/images/order.png" mode="aspectFit"></image>
 					</view>

@@ -22,6 +22,11 @@
 	// 设置整个项目的背景色
 	page {
 		background-color: #f5f5f5;
+		height: 100%;
+		width:100%;
+		box-sizing: border-box;
+		overflow-x: hidden;
+		overflow-y: auto;
 	}
 
 	/* #endif */

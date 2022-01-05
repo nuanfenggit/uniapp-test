@@ -1,11 +1,15 @@
 const request = async function(url, method, data, header) {
 	return new Promise((resolve, reject) => {
 		data['key'] = '457760ae499840c78fa1f7f935d6cfc6';
+		// console.log(url)
+		// console.log(url.indexOf('v2') !== -1 ? '/geoapi'+ url : '/devapi'+ url ,)
+		
 		// 发送请求
 		uni.request({
 			// url: 'https://spring.zjmx.com:8091' + url,
 		    // url: 'https://geoapi.qweather.com/v2/city/lookup?location=beij&key=457760ae499840c78fa1f7f935d6cfc6', //仅为示例，并非真实接口地址。
-		    url: 'https://geoapi.qweather.com' + url,
+			url: url.indexOf('v2') !== -1 ? '/geoapi'+ url : '/devapi'+ url ,
+		    // url: 'https://geoapi.qweather.com' + url,
 			method: method,
 			data: data,
 		    header: {

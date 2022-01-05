@@ -87,5 +87,38 @@
             "urlCheck" : false
         },
         "usingComponents" : true
-    }
+    },
+	"h5" : {
+	    "devServer" : {
+	        "port" : "1110",
+	        "https" : false,
+	        "historyApiFallback" : true,
+	        "host" : "0.0.0.0",
+	        "disableHostCheck" : true,
+	        "noInfo" : true,
+	        "proxy" : {
+	            "/geoapi" : {
+	                "target" : "https://geoapi.qweather.com",
+	                "changeOrigin" : true,
+	                "secure" : false,
+	                "pathRewrite" : {
+	                    "^/geoapi" : ""
+	                }
+	            },
+	            "/devapi" : {
+	                "target" : "https://devapi.qweather.com",
+	                "changeOrigin" : true,
+	                "secure" : false,
+	                "pathRewrite" : {
+	                    "^/devapi" : ""
+	                }
+	            }
+	        }
+	    },
+	    "domain" : "https:test.suezp.cn",
+	    "router" : {
+	        "base" : "/",
+	        "mode" : "hash"
+	    }
+	}
 }
